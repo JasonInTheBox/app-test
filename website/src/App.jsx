@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <card>Yay</card>
+      <card>Yay but yay</card>
     </>
   )
 }
