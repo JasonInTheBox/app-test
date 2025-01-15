@@ -1,23 +1,12 @@
-import InputBox from './inputBox.jsx'
+import InputBox from "./InputBox.jsx"
 
 function App() {
-
-  function App() {
-
     return (
       <>
-        <div className="input">
-  
-              <h1>Enter some stuff</h1>
-  
-              <div>
-                  <input type="text" placeholder="Enter your ingredients"/>
-                  <button className="inputCook">Cook!</button>
-              </div>
-          </div>
+        <h1>Hello World! UwU</h1>
+        <InputBox></InputBox>
       </>
-    )
-  }
+  );
 }
 
 export default App
