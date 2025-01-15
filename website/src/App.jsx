@@ -1,10 +1,18 @@
-import './App.css'
+import InputBox from './inputBox.jsx'
 
 function App() {
 
   return (
     <>
-      <card>Yay</card>
+      <div className="input">
+
+            <h1>Enter some stuff</h1>
+
+            <div>
+                <input type="text" placeholder="Enter your ingredients"/>
+                <button className="inputCook">Cook!</button>
+            </div>
+        </div>
     </>
   )
 }
