@@ -57,20 +57,20 @@ function InputBox(){
     //     }
     // }
 
-    loading && <p>Loading...</p>
+    //loading && <p>Loading...</p>
 
-    error && <p style={{ color: 'red' }}>{error}</p>
+    //error && <p style={{ color: 'red' }}>{error}</p>
 
-    result && (
-        <div className="results">
-            <h2>Recipes</h2>
-            <ul>
-                {result.recipes.map((recipe, index) => (
-                    <li key={index}>{recipe.name}</li>
-                ))}
-            </ul>
-        </div>
-    )
+    //result && (
+        //<div className="results">
+            //<h2>Recipes</h2>
+            //<ul>
+                //{result.recipes.map((recipe, index) => (
+    //                <li key={index}>{recipe.name}</li>
+    //            ))}
+    //        </ul>
+    //    </div>
+    //)
 
 
     return(
