@@ -1,0 +1,93 @@
+.log-in{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.login-input{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-input label {
+  display: block;
+  margin-bottom: -10px;
+  font-size: 18px;
+  color: #1A535C;
+}
+
+.login-input input {
+  display: inline-block;
+  width: auto;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+
+body{
+  background-color: hsl(113, 100%, 98%);
+}
+
+.header-container{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: hsl(113, 100%, 98%);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: hsl(188, 56%, 23%);
+}
+
+.search-box{
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.box{
+  background-color: hsl(0, 0%, 93%);
+}
+
+.smart-menu{
+  font-size: 2.5rem;
+  display: flex;
+  text-align: center;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+hr{
+  border: 0;
+  border-top: 2px solid hsl(188, 56%, 23%);
+  margin: 0;
+}
+
+.input{
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.no-labels{
+  list-style-type: none;
+}
