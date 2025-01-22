@@ -4,6 +4,10 @@ function InputBox(){
     const [ingredients, setIngredients] = useState([]);
     const [newIngredient, setNewIngredient] = useState("");
 
+    const [result, setResult] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+
     //to show input
     function handleInputChange(event){  
         setNewIngredient(event.target.value);
@@ -53,6 +57,21 @@ function InputBox(){
     //     }
     // }
 
+    loading && <p>Loading...</p>
+
+    error && <p style={{ color: 'red' }}>{error}</p>
+
+    result && (
+        <div className="results">
+            <h2>Recipes</h2>
+            <ul>
+                {result.recipes.map((recipe, index) => (
+                    <li key={index}>{recipe.name}</li>
+                ))}
+            </ul>
+        </div>
+    )
+
 
     return(
         <div className="input">
@@ -67,6 +86,9 @@ function InputBox(){
                     </li>
                 )}
             </ul>
+
+
+
             <p>{JSON.stringify(ingredients)}</p>
         </div>
     );
